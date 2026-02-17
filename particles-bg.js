@@ -4,36 +4,36 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS("particles-bg", {
     particles: {
       number: {
-        value: 95,
+        value: 125,
         density: {
           enable: true,
-          value_area: 1000
+          value_area: 900
         }
       },
       color: {
-        value: "#2b2f33"
+        value: "#0f141a"
       },
       shape: {
         type: "circle"
       },
       opacity: {
-        value: 0.65,
+        value: 0.88,
         random: true
       },
       size: {
-        value: 2.2,
+        value: 2.9,
         random: true
       },
       line_linked: {
         enable: true,
-        distance: 170,
-        color: "#272d33",
-        opacity: 0.38,
-        width: 1.35
+        distance: 175,
+        color: "#11171e",
+        opacity: 0.62,
+        width: 1.7
       },
       move: {
         enable: true,
-        speed: 1.25,
+        speed: 1.45,
         direction: "none",
         random: false,
         straight: false,
@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       modes: {
         grab: {
-          distance: 190,
+          distance: 205,
           line_linked: {
-            opacity: 0.55
+            opacity: 0.82
           }
         },
         push: {
