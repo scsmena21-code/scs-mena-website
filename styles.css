@@ -6,6 +6,9 @@
   --muted: #b2bcc5;
   --line: rgba(255, 255, 255, 0.12);
   --brand: #db9a00;
+  --mesh-line: rgba(219, 154, 0, 0.46);
+  --mesh-line-soft: rgba(219, 154, 0, 0.34);
+  --mesh-node: rgba(255, 223, 150, 0.82);
 }
 
 *,
@@ -46,19 +49,19 @@ body::before {
 
 body::after {
   background:
-    radial-gradient(circle at 74% 78%, rgba(219, 154, 0, 0.14), transparent 38%),
-    radial-gradient(circle at 20% 70%, rgba(74, 90, 120, 0.16), transparent 32%),
+    radial-gradient(circle at 74% 78%, rgba(219, 154, 0, 0.24), transparent 38%),
+    radial-gradient(circle at 20% 70%, rgba(74, 90, 120, 0.2), transparent 32%),
     repeating-linear-gradient(
       -8deg,
-      rgba(211, 177, 108, 0.18) 0 2px,
+      var(--mesh-line) 0 2px,
       transparent 2px 56px
     ),
     repeating-linear-gradient(
       12deg,
-      rgba(211, 177, 108, 0.15) 0 2px,
+      var(--mesh-line-soft) 0 2px,
       transparent 2px 58px
     ),
-    radial-gradient(circle at 8px 8px, rgba(244, 233, 207, 0.45) 0 3px, transparent 4px);
+    radial-gradient(circle at 8px 8px, var(--mesh-node) 0 3px, transparent 4px);
   background-size:
     auto,
     auto,
@@ -71,9 +74,9 @@ body::after {
     center,
     center,
     0 0;
-  mix-blend-mode: screen;
-  opacity: 0.58;
-  filter: blur(0.4px);
+  mix-blend-mode: normal;
+  opacity: 0.84;
+  filter: blur(0.2px);
   transform: perspective(1000px) rotateX(26deg) scale(1.12);
   transform-origin: center 35%;
   animation: floatB 24s ease-in-out infinite alternate, meshShift 30s linear infinite;
