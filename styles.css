@@ -67,6 +67,30 @@ a {
   background: var(--bg);
   backdrop-filter: none;
   border-bottom: 0;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12px 12px, rgba(219, 154, 0, 0.55) 0 2px, transparent 2.5px),
+    repeating-linear-gradient(
+      -9deg,
+      rgba(219, 154, 0, 0.34) 0 1.5px,
+      transparent 1.5px 40px
+    ),
+    repeating-linear-gradient(
+      11deg,
+      rgba(219, 154, 0, 0.27) 0 1.5px,
+      transparent 1.5px 42px
+    );
+  background-size: 44px 44px, 100% 100%, 100% 100%;
+  opacity: 0.75;
 }
 
 .site-header::after {
