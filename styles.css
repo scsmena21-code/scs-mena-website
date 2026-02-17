@@ -1,14 +1,14 @@
 :root {
   --bg: #06080b;
-  --surface: rgba(17, 21, 27, 0.78);
-  --surface-alt: rgba(12, 16, 22, 0.84);
+  --surface: rgba(17, 21, 27, 0.58);
+  --surface-alt: rgba(12, 16, 22, 0.62);
   --text: #eef3f7;
   --muted: #b2bcc5;
   --line: rgba(255, 255, 255, 0.12);
   --brand: #db9a00;
-  --mesh-line: rgba(219, 154, 0, 0.46);
-  --mesh-line-soft: rgba(219, 154, 0, 0.34);
-  --mesh-node: rgba(255, 223, 150, 0.82);
+  --mesh-line: rgba(219, 154, 0, 0.72);
+  --mesh-line-soft: rgba(219, 154, 0, 0.56);
+  --mesh-node: rgba(255, 223, 150, 0.98);
 }
 
 *,
@@ -35,7 +35,7 @@ body::after {
   content: "";
   position: fixed;
   inset: -30%;
-  z-index: -2;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -49,8 +49,8 @@ body::before {
 
 body::after {
   background:
-    radial-gradient(circle at 74% 78%, rgba(219, 154, 0, 0.24), transparent 38%),
-    radial-gradient(circle at 20% 70%, rgba(74, 90, 120, 0.2), transparent 32%),
+    radial-gradient(circle at 74% 78%, rgba(219, 154, 0, 0.34), transparent 38%),
+    radial-gradient(circle at 20% 70%, rgba(74, 90, 120, 0.24), transparent 32%),
     repeating-linear-gradient(
       -8deg,
       var(--mesh-line) 0 2px,
@@ -75,8 +75,8 @@ body::after {
     center,
     0 0;
   mix-blend-mode: normal;
-  opacity: 0.84;
-  filter: blur(0.2px);
+  opacity: 0.96;
+  filter: blur(0);
   transform: perspective(1000px) rotateX(26deg) scale(1.12);
   transform-origin: center 35%;
   animation: floatB 24s ease-in-out infinite alternate, meshShift 30s linear infinite;
@@ -96,7 +96,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(7, 10, 14, 0.9);
+  background: rgba(7, 10, 14, 0.42);
   backdrop-filter: blur(7px);
   border-bottom: 1px solid var(--line);
 }
