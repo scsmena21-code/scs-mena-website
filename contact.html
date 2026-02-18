@@ -42,7 +42,7 @@
         and registry/court filing support quickly.
       </p>
 
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" id="contact-form" action="#" method="post">
         <label for="name">Full Name</label>
         <input id="name" name="name" type="text" required />
 
@@ -95,5 +95,41 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles-bg.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById("contact-form");
+      if (!form) return;
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name")?.value.trim() || "";
+        const email = document.getElementById("email")?.value.trim() || "";
+        const company = document.getElementById("company")?.value.trim() || "";
+        const serviceSelect = document.getElementById("service");
+        const service =
+          serviceSelect && serviceSelect.selectedIndex > 0
+            ? serviceSelect.options[serviceSelect.selectedIndex].text
+            : "Not specified";
+        const jurisdictions = document.getElementById("jurisdictions")?.value.trim() || "";
+        const timeline = document.getElementById("timeline")?.value.trim() || "";
+        const message = document.getElementById("message")?.value.trim() || "";
+
+        const subject = encodeURIComponent("Website Inquiry - SCS MENA");
+        const body = encodeURIComponent(
+          "Name: " + name + "\n" +
+          "Email: " + email + "\n" +
+          "Company: " + (company || "Not provided") + "\n" +
+          "Primary Service: " + service + "\n" +
+          "Jurisdictions: " + (jurisdictions || "Not provided") + "\n" +
+          "Timeline: " + (timeline || "Not provided") + "\n\n" +
+          "Inquiry:\n" + message
+        );
+
+        window.location.href =
+          "mailto:enquiries@scsmena.onmicrosoft.com?subject=" + subject + "&body=" + body;
+      });
+    })();
+  </script>
 </body>
 </html>
