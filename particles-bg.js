@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         value: 125,
         density: {
           enable: true,
-          value_area: 900
+          value_area: 1400
         }
       },
       color: {
@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
         random: true
       },
       size: {
-        value: 2.9,
+        value: 3.2,
         random: true
       },
       line_linked: {
         enable: true,
-        distance: 175,
+        distance: 190,
         color: "#db9a00",
-        opacity: 0.62,
-        width: 1.7
+        opacity: 0.56,
+        width: 2
       },
       move: {
         enable: true,
-        speed: 1.45,
+        speed: 1.25,
         direction: "none",
         random: false,
         straight: false,
@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       modes: {
         grab: {
-          distance: 205,
+          distance: 220,
           line_linked: {
-            opacity: 0.82
+            opacity: 0.75
           }
         },
         push: {
