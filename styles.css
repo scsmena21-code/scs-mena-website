@@ -5,7 +5,7 @@
   --text: #1f2831;
   --muted: #5b6671;
   --line: rgba(26, 33, 40, 0.08);
-  --brand: #1a2128;
+  --brand: #db9a00;
 }
 
 *,
@@ -97,7 +97,7 @@ a {
 .brand img {
   width: min(520px, 46vw);
   height: auto;
-  filter: grayscale(1) brightness(0.22) contrast(1.2);
+  filter: brightness(0) saturate(100%) invert(64%) sepia(69%) saturate(1049%) hue-rotate(9deg) brightness(97%) contrast(101%);
 }
 
 .brand {
@@ -114,7 +114,7 @@ a {
 }
 
 .site-nav a {
-  color: var(--muted);
+  color: var(--brand);
   font-weight: 600;
   font-size: 1.05rem;
   letter-spacing: 0.02em;
@@ -123,7 +123,7 @@ a {
 
 .site-nav a[aria-current="page"],
 .site-nav a:hover {
-  color: #0f1720;
+  color: var(--brand);
 }
 
 .hero-band {
