@@ -74,9 +74,9 @@ main .container,
   z-index: 20;
   background: linear-gradient(
     to bottom,
-    rgba(221, 225, 229, 0.9) 0%,
-    rgba(221, 225, 229, 0.68) 45%,
-    rgba(221, 225, 229, 0.46) 100%
+    rgba(221, 225, 229, 0.98) 0%,
+    rgba(221, 225, 229, 0.86) 38%,
+    rgba(221, 225, 229, 0.58) 100%
   );
   backdrop-filter: none;
   border-bottom: 0;
@@ -87,10 +87,10 @@ main .container,
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -52px;
-  height: 52px;
+  bottom: -72px;
+  height: 72px;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(221, 225, 229, 0.52), rgba(221, 225, 229, 0));
+  background: linear-gradient(to bottom, rgba(221, 225, 229, 0.66), rgba(221, 225, 229, 0));
 }
 
 .nav-wrap {
