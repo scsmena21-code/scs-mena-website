@@ -139,6 +139,15 @@ main .container,
   color: var(--brand);
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #2b3642;
+  outline-offset: 2px;
+}
+
 .hero-band {
   background: var(--surface);
   border-bottom: 0;
@@ -178,7 +187,7 @@ h1 {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.7rem;
 }
 
@@ -190,6 +199,22 @@ h1 {
   line-height: 1.35;
   padding: 0.75rem 0.85rem;
   border-radius: 8px;
+}
+
+.credibility-list li strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.credibility-list li span {
+  display: block;
+  font-weight: 500;
+}
+
+.credibility-title {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  color: #2e3944;
 }
 
 .section {
@@ -247,6 +272,29 @@ p {
 }
 
 .service-meta p {
+  margin: 0.35rem 0;
+}
+
+.service-tiles {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.service-tile {
+  border: 1px solid rgba(26, 33, 40, 0.18);
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  padding: 0.9rem;
+}
+
+.service-tile h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+}
+
+.service-tile p {
   margin: 0.35rem 0;
 }
 
@@ -415,6 +463,10 @@ label,
 
   .service-block {
     gap: 0.8rem;
+  }
+
+  .service-tiles {
+    grid-template-columns: 1fr;
   }
 }
 
