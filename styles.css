@@ -88,13 +88,13 @@ main .container,
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -82px;
-  height: 82px;
+  bottom: -36px;
+  height: 36px;
   pointer-events: none;
   background: linear-gradient(
     to bottom,
-    rgba(221, 225, 229, 0.9) 0%,
-    rgba(221, 225, 229, 0.58) 46%,
+    rgba(221, 225, 229, 0.92) 0%,
+    rgba(221, 225, 229, 0.52) 44%,
     rgba(221, 225, 229, 0) 100%
   );
 }
