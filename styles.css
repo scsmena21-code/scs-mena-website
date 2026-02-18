@@ -74,9 +74,10 @@ main .container,
   z-index: 20;
   background: linear-gradient(
     to bottom,
-    rgba(221, 225, 229, 0.98) 0%,
-    rgba(221, 225, 229, 0.86) 38%,
-    rgba(221, 225, 229, 0.58) 100%
+    rgba(221, 225, 229, 1) 0%,
+    rgba(221, 225, 229, 0.98) 26%,
+    rgba(221, 225, 229, 0.9) 56%,
+    rgba(221, 225, 229, 0.72) 100%
   );
   backdrop-filter: none;
   border-bottom: 0;
@@ -87,10 +88,15 @@ main .container,
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -72px;
-  height: 72px;
+  bottom: -126px;
+  height: 126px;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(221, 225, 229, 0.66), rgba(221, 225, 229, 0));
+  background: linear-gradient(
+    to bottom,
+    rgba(221, 225, 229, 0.86) 0%,
+    rgba(221, 225, 229, 0.62) 48%,
+    rgba(221, 225, 229, 0) 100%
+  );
 }
 
 .nav-wrap {
