@@ -64,7 +64,8 @@ a {
 main .container,
 .site-footer .container {
   position: relative;
-  left: -22px;
+  left: 0;
+  transform: translateX(56px);
 }
 
 .site-header {
@@ -326,6 +327,7 @@ label,
   main .container,
   .site-footer .container {
     left: 0;
+    transform: none;
   }
 
   body {
