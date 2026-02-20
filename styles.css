@@ -283,10 +283,10 @@ p {
 }
 
 .service-tile {
-  border: 1px solid rgba(26, 33, 40, 0.18);
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 8px;
-  padding: 0.9rem;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0.25rem 0;
 }
 
 .service-tile h3 {
